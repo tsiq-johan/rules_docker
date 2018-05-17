@@ -117,7 +117,7 @@ def nodejs_image(
 
     layers = [
         # Put the Node binary into its own layer.
-        "@nodejs//:bin/node",
+        "@nodejs//:node",
         # node_modules can get large, it should be in its own layer.
         node_modules,
     ] + layers
